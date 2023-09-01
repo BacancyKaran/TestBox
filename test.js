@@ -1,3 +1,12 @@
+ typed1Path = ".box-1 .elementor-element:nth-child(2) .elementor-widget-container"
+typed1 = jQuery(typed1Path).html()
+
+      typed2Path = ".box-2 .elementor-element:nth-child(2) .elementor-widget-container"
+typed2 = jQuery(typed2Path).html()
+
+      typed3Path = ".box-3 .elementor-element:nth-child(2) .elementor-widget-container"
+typed3 = jQuery(typed3Path).html()
+
 jQuery(document).ready(function(){
     var num_steps = 3;
     var cur_step = 2;
@@ -31,17 +40,10 @@ jQuery(document).ready(function(){
 });
 
 
+
+
+
 function ontype(cur_step){
-
-    typed1Path = ".box-1 .elementor-element:nth-child(2) .elementor-widget-container"
-typed1 = jQuery(typed1Path).html()
-
-      typed2Path = ".box-2 .elementor-element:nth-child(2) .elementor-widget-container"
-typed2 = jQuery(typed2Path).html()
-
-      typed3Path = ".box-3 .elementor-element:nth-child(2) .elementor-widget-container"
-typed3 = jQuery(typed3Path).html()
-
 
     if(cur_step === 1){
         
