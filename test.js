@@ -52,7 +52,7 @@ function ontype(cur_step){
         typeSpeed: 60,
         startDelay: 0,
         backSpeed: 60,
-        backDelay: 4920,
+        backDelay: 5920,
         loop: true,
         cursorChar: "|",
         contentType: 'html'
@@ -63,7 +63,7 @@ function ontype(cur_step){
         typeSpeed: 60,
         startDelay: 0,
         backSpeed: 60,
-        backDelay: 4920,
+        backDelay: 5920,
         loop: true,
         cursorChar: "|",
         contentType: 'html'
