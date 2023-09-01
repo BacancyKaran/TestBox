@@ -1,12 +1,12 @@
 jQuery(window).load(function(){
  typed1Path = ".box-1 .elementor-element:nth-child(2) .elementor-widget-container"
-typed1 = jQuery(typed1Path).html()
+typed1 = '\n\t\t\t<span id="typedone">Consistent</span><span class="typed-cursor">|</span>\t\t'
 
       typed2Path = ".box-2 .elementor-element:nth-child(2) .elementor-widget-container"
-typed2 = jQuery(typed2Path).html()
+typed2 = '\n\t\t\t<span id="typedone">Visionary</span><span class="typed-cursor">|</span>\t\t'
 
       typed3Path = ".box-3 .elementor-element:nth-child(2) .elementor-widget-container"
-typed3 = jQuery(typed3Path).html()
+typed3 = '\n\t\t\t<span id="typedone">Indeginos</span><span class="typed-cursor">|</span>\t\t'
 console.log(typed1+"1")
 console.log(typed2+"2")
 console.log(typed3+"3")
