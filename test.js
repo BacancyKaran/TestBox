@@ -35,8 +35,7 @@ function ontype(cur_step){
     typedtwo = jQuery(".show-boxed #typedtwo");
     typethree = jQuery(".show-boxed #typethree");
 
-    if(cur_step === 1){
-        jQuery(".show-boxed #typedone").typed({
+        jQuery(".box-1 #typedone").typed({
             strings: ["Consistent"],
             typeSpeed: 60,
             startDelay: 0,
@@ -46,9 +45,9 @@ function ontype(cur_step){
             cursorChar: "|",
             contentType: 'html'
         });
-    }
 
-    jQuery(".show-boxed #typedtwo").typed({
+
+    jQuery(".box-2 #typedtwo").typed({
         strings: ["Visionary"],
         typeSpeed: 60,
         startDelay: 0,
@@ -59,7 +58,7 @@ function ontype(cur_step){
         contentType: 'html'
     });
 
-    jQuery(".show-boxed #typethree").typed({
+    jQuery(".box-3 #typethree").typed({
         strings: ["Ingenious"],
         typeSpeed: 60,
         startDelay: 0,
