@@ -6,9 +6,9 @@ typed2 = jQuery(typed2Path).html()
 
       typed3Path = ".box-3 .elementor-element:nth-child(2) .elementor-widget-container"
 typed3 = jQuery(typed3Path).html()
-console.log(typed1)
-console.log(typed2)
-console.log(typed3)
+console.log(typed1+"1")
+console.log(typed2+"2")
+console.log(typed3+"3")
 jQuery(document).ready(function(){
     var num_steps = 3;
     var cur_step = 2;
