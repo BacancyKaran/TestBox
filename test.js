@@ -1,3 +1,4 @@
+jQuery(window).load(function(){
  typed1Path = ".box-1 .elementor-element:nth-child(2) .elementor-widget-container"
 typed1 = jQuery(typed1Path).html()
 
@@ -103,18 +104,6 @@ function ontype(cur_step){
       }
 }
 
-jQuery(window).load(function(){
-
-    jQuery(".show-boxed #typedone").typed({
-        strings: ["Consistent"],
-        typeSpeed: 60,
-        startDelay: 0,
-        backSpeed: 60,
-        backDelay: 4800,
-        loop: false,
-        cursorChar: "|",
-        contentType: 'html'
-    });
 
 //     jQuery(".show-boxed #typedtwo").typed({
 //         strings: ["Visionary"],
