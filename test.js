@@ -35,7 +35,11 @@ function ontype(cur_step){
     typedtwo = jQuery(".show-boxed #typedtwo");
     typethree = jQuery(".show-boxed #typethree");
 
-        jQuery(".box-1 #typedone").typed({
+       
+}
+
+jQuery(window).load(function(){
+ jQuery(".box-1 #typedone").typed({
             strings: ["Consistent"],
             typeSpeed: 60,
             startDelay: 0,
@@ -65,20 +69,6 @@ function ontype(cur_step){
         backSpeed: 60,
         backDelay: 5920,
         loop: true,
-        cursorChar: "|",
-        contentType: 'html'
-    });
-}
-
-jQuery(window).load(function(){
-
-    jQuery(".show-boxed #typedone").typed({
-        strings: ["Consistent"],
-        typeSpeed: 60,
-        startDelay: 0,
-        backSpeed: 60,
-        backDelay: 4800,
-        loop: false,
         cursorChar: "|",
         contentType: 'html'
     });
