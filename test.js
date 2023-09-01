@@ -59,7 +59,7 @@ function ontype(cur_step){
             cursorChar: "|",
             contentType: 'html'
         });
-        etTimeout( function() {
+        setTimeout( function() {
             jQuery(typed1Path).html("")
         },7000)
     }
@@ -78,11 +78,11 @@ function ontype(cur_step){
     });
         
       setTimeout( function() {
-            jQuery(typed1Path).html("")
+            jQuery(typed2Path).html("")
         },7000)
   }
       if(cur_step === 3){
-        jQuery(typed2Path).html(typed2)
+        jQuery(typed3Path).html(typed3)
         
           jQuery(".show-boxed #typethree").typed({
             strings: ["Ingenious"],
@@ -96,7 +96,7 @@ function ontype(cur_step){
         });
          
           setTimeout( function() {
-            jQuery(typed1Path).html("")
+            jQuery(typed3Path).html("")
         },7000)
       }
 }
