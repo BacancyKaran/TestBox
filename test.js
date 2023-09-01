@@ -1,15 +1,3 @@
-jQuery(window).load(function(){
- typed1Path = ".box-1 .elementor-element:nth-child(2) .elementor-widget-container"
-typed1 = '\n\t\t\t<span id="typedone">Consistent</span><span class="typed-cursor">|</span>\t\t'
-
-      typed2Path = ".box-2 .elementor-element:nth-child(2) .elementor-widget-container"
-typed2 = '\n\t\t\t<span id="typedone">Visionary</span><span class="typed-cursor">|</span>\t\t'
-
-      typed3Path = ".box-3 .elementor-element:nth-child(2) .elementor-widget-container"
-typed3 = '\n\t\t\t<span id="typedone">Indeginos</span><span class="typed-cursor">|</span>\t\t'
-console.log(typed1+"1")
-console.log(typed2+"2")
-console.log(typed3+"3")
 jQuery(document).ready(function(){
     var num_steps = 3;
     var cur_step = 2;
@@ -18,8 +6,6 @@ jQuery(document).ready(function(){
     setInterval(calcValues, 1000);
     function temp() {
         setTimeout( function() {
-
-            ontype(cur_step);
             jQuery('.elementor-section-boxed').removeClass('show-boxed');
             jQuery('.box-' + cur_step).addClass('show-boxed');
             
@@ -28,10 +14,10 @@ jQuery(document).ready(function(){
                 cur_step = 1;
             }
             temp();
+            ontype(cur_step);
         }, 7000);
+        
     }
-    
-        jQuery(typed1Path).html("")
 
     function calcValues() {
         seconds -= 1;
@@ -43,67 +29,60 @@ jQuery(document).ready(function(){
 });
 
 
-
-
-
 function ontype(cur_step){
 
+    typedOne = jQuery(".show-boxed #typedone");
+    typedtwo = jQuery(".show-boxed #typedtwo");
+    typethree = jQuery(".show-boxed #typethree");
+
     if(cur_step === 1){
-        
-        jQuery(typed1Path).html(typed1)
-        
         jQuery(".show-boxed #typedone").typed({
             strings: ["Consistent"],
             typeSpeed: 60,
             startDelay: 0,
             backSpeed: 60,
-            backDelay: 3800,
-            loop: false,
+            backDelay: 4800,
+            loop: true,
             cursorChar: "|",
             contentType: 'html'
         });
-        setTimeout( function() {
-            jQuery(typed1Path).html("")
-        },7000)
     }
-  if(cur_step === 2){
-        jQuery(typed2Path).html(typed2)
-  
-      jQuery(".show-boxed #typedtwo").typed({
+
+    jQuery(".show-boxed #typedtwo").typed({
         strings: ["Visionary"],
         typeSpeed: 60,
         startDelay: 0,
         backSpeed: 60,
         backDelay: 4920,
+        loop: true,
+        cursorChar: "|",
+        contentType: 'html'
+    });
+
+    jQuery(".show-boxed #typethree").typed({
+        strings: ["Ingenious"],
+        typeSpeed: 60,
+        startDelay: 0,
+        backSpeed: 60,
+        backDelay: 4920,
+        loop: true,
+        cursorChar: "|",
+        contentType: 'html'
+    });
+}
+
+jQuery(window).load(function(){
+
+    jQuery(".show-boxed #typedone").typed({
+        strings: ["Consistent"],
+        typeSpeed: 60,
+        startDelay: 0,
+        backSpeed: 60,
+        backDelay: 4800,
         loop: false,
         cursorChar: "|",
         contentType: 'html'
     });
-        
-      setTimeout( function() {
-            jQuery(typed2Path).html("")
-        },7000)
-  }
-      if(cur_step === 3){
-        jQuery(typed3Path).html(typed3)
-        
-          jQuery(".show-boxed #typethree").typed({
-            strings: ["Ingenious"],
-            typeSpeed: 60,
-            startDelay: 0,
-            backSpeed: 60,
-            backDelay: 4920,
-            loop: false,
-            cursorChar: "|",
-            contentType: 'html'
-        });
-         
-          setTimeout( function() {
-            jQuery(typed3Path).html("")
-        },7000)
-      }
-}
-
 
 //     jQuery(".show-boxed #typedtwo").typed({
 //         strings: ["Visionary"],
@@ -196,4 +175,3 @@ function ontype(cur_step){
 //     },3000);
             
 // });
-console.log("me who else")
