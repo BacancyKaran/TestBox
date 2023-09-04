@@ -29,16 +29,8 @@ jQuery(document).ready(function(){
 });
 
 
-function ontype(cur_step){
+function ontype(cur_step){      
 
-    typedOne = jQuery(".show-boxed #typedone");
-    typedtwo = jQuery(".show-boxed #typedtwo");
-    typethree = jQuery(".show-boxed #typethree");
-
-       
-}
-
-jQuery(window).load(function(){
  jQuery(".box-1 #typedone").typed({
             strings: ["Consistent"],
             typeSpeed: 60,
